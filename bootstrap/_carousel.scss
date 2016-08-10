@@ -34,18 +34,18 @@
       &.next,
       &.active.right {
         @include translate3d(100%, 0, 0);
-        @include left(0);
+        left: 0;
       }
       &.prev,
       &.active.left {
         @include translate3d(-100%, 0, 0);
-        @include left(0);
+        left: 0;
       }
       &.next.left,
       &.prev.right,
       &.active {
         @include translate3d(0, 0, 0);
-        @include left(0);
+        left: 0;
       }
     }
   }
@@ -57,7 +57,7 @@
   }
 
   > .active {
-    @include left(0);
+    left: 0;
   }
 
   > .next,
@@ -68,21 +68,21 @@
   }
 
   > .next {
-    @include left(100%);
+    left: 100%;
   }
   > .prev {
-    @include left(-100%);
+    left: -100%;
   }
   > .next.left,
   > .prev.right {
-    @include left(0);
+    left: 0;
   }
 
   > .active.left {
-    @include left(-100%);
+    left: -100%;
   }
   > .active.right {
-    @include left(100%);
+    left: 100%;
   }
 
 }
@@ -93,7 +93,7 @@
 .carousel-control {
   position: absolute;
   top: 0;
-  @include left(0);
+  left: 0;
   bottom: 0;
   width: $carousel-control-width;
   @include opacity($carousel-control-opacity);
@@ -110,8 +110,8 @@
     @include gradient-horizontal($start-color: rgba(0,0,0,.5), $end-color: rgba(0,0,0,.0001));
   }
   &.right {
-    @include left(auto);
-    @include right(0);
+    left: auto;
+    right: 0;
     @include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.5));
   }
 
@@ -137,13 +137,13 @@
   }
   .icon-prev,
   .glyphicon-chevron-left {
-    @include left(50%);
-    @include margin-left(-10px);
+    left: 50%;
+    margin-left: -10px;
   }
   .icon-next,
   .glyphicon-chevron-right {
-    @include right(50%);
-    @include margin-right(-10px);
+    right: 50%;
+    margin-right: -10px;
   }
   .icon-prev,
   .icon-next {
@@ -174,11 +174,11 @@
 .carousel-indicators {
   position: absolute;
   bottom: 10px;
-  @include left(50%);
+  left: 50%;
   z-index: 15;
   width: 60%;
-  @include margin-left(-30%);
-  @include padding-left(0);
+  margin-left: -30%;
+  padding-left: 0;
   list-style: none;
   text-align: center;
 
@@ -248,11 +248,11 @@
     }
     .glyphicon-chevron-left,
     .icon-prev {
-      @include margin-left($carousel-control-font-size / -2);
+      margin-left: ($carousel-control-font-size / -2);
     }
     .glyphicon-chevron-right,
     .icon-next {
-      @include margin-right($carousel-control-font-size / -2);
+      margin-right: ($carousel-control-font-size / -2);
     }
   }
 
