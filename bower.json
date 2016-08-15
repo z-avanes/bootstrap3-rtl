@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap-rtl",
+  "version": "1.0.0",
+  "authors": [
+    "Zareh Avanesian <z.avanes@gmail.com> (http://www.avadesigner.com)"
+  ],
+  "description": "bootstrap sass rtl",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-sass-official": "3.3.6"
+  }
+}
