@@ -6,7 +6,7 @@
 .popover {
   position: absolute;
   top: 0;
-  @include left(0);
+  left: 0;
   z-index: $zindex-popover;
   display: none;
   max-width: $popover-max-width;
@@ -25,9 +25,9 @@
 
   // Offset the popover to account for the popover arrow
   &.top     { margin-top: -$popover-arrow-width; }
-  &.right   { @include margin-left($popover-arrow-width); }
+  &.right   { margin-left: $popover-arrow-width; }
   &.bottom  { margin-top: $popover-arrow-width; }
-  &.left    { @include margin-left(-$popover-arrow-width); }
+  &.left    { margin-left: -$popover-arrow-width; }
 }
 
 .popover-title {
@@ -68,8 +68,8 @@
 
 .popover {
   &.top > .arrow {
-    @include left(50%);
-    @include margin-left(-$popover-arrow-outer-width);
+    left: 50%;
+    margin-left: -$popover-arrow-outer-width;
     border-bottom-width: 0;
     border-top-color: $popover-arrow-outer-fallback-color; // IE8 fallback
     border-top-color: $popover-arrow-outer-color;
@@ -77,29 +77,29 @@
     &:after {
       content: " ";
       bottom: 1px;
-      @include margin-left(-$popover-arrow-width);
+      margin-right: -$popover-arrow-width;
       border-bottom-width: 0;
       border-top-color: $popover-arrow-color;
     }
   }
   &.right > .arrow {
     top: 50%;
-    @include left(-$popover-arrow-outer-width);
+    left: -$popover-arrow-outer-width;
     margin-top: -$popover-arrow-outer-width;
-    @include border-left-width(0);
-    @include border-right-color($popover-arrow-outer-fallback-color); // IE8 fallback
-    @include border-right-color($popover-arrow-outer-color);
+    border-left-width: 0;
+    border-right-color: $popover-arrow-outer-fallback-color; // IE8 fallback
+    border-right-color: $popover-arrow-outer-color;
     &:after {
       content: " ";
-      @include left(1px);
+      left: 1px;
       bottom: -$popover-arrow-width;
-      @include border-left-width(0);
-      @include border-right-color($popover-arrow-color);
+      border-left-width: 0;
+      border-right-color: $popover-arrow-color;
     }
   }
   &.bottom > .arrow {
-    @include left(50%);
-    @include margin-left(-$popover-arrow-outer-width);
+    left: 50%;
+    margin-left: -$popover-arrow-outer-width;
     border-top-width: 0;
     border-bottom-color: $popover-arrow-outer-fallback-color; // IE8 fallback
     border-bottom-color: $popover-arrow-outer-color;
@@ -107,7 +107,7 @@
     &:after {
       content: " ";
       top: 1px;
-      @include margin-left(-$popover-arrow-width);
+      margin-right: -$popover-arrow-width;
       border-top-width: 0;
       border-bottom-color: $popover-arrow-color;
     }
@@ -115,16 +115,16 @@
 
   &.left > .arrow {
     top: 50%;
-    @include right(-$popover-arrow-outer-width);
+    right: -$popover-arrow-outer-width;
     margin-top: -$popover-arrow-outer-width;
-    @include border-right-width(0);
-    @include border-left-color($popover-arrow-outer-fallback-color); // IE8 fallback
-    @include border-left-color($popover-arrow-outer-color);
+    border-right-width: 0;
+    border-left-color: $popover-arrow-outer-fallback-color; // IE8 fallback
+    border-left-color: $popover-arrow-outer-color;
     &:after {
       content: " ";
-      @include right(1px);
-      @include border-right-width(0);
-      @include border-left-color($popover-arrow-color);
+      right: 1px;
+      border-right-width: 0;
+      border-left-color: $popover-arrow-color;
       bottom: -$popover-arrow-width;
     }
   }

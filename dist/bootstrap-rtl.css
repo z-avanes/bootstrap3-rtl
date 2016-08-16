@@ -6674,7 +6674,7 @@ button.close {
   padding: 5px 0;
 }
 .tooltip.right {
-  margin-right: 3px;
+  margin-left: 3px;
   padding: 0 5px;
 }
 .tooltip.bottom {
@@ -6682,7 +6682,7 @@ button.close {
   padding: 5px 0;
 }
 .tooltip.left {
-  margin-right: -3px;
+  margin-left: -3px;
   padding: 0 5px;
 }
 
@@ -6705,56 +6705,56 @@ button.close {
 
 .tooltip.top .tooltip-arrow {
   bottom: 0;
-  right: 50%;
-  margin-right: -5px;
+  left: 50%;
+  margin-left: -5px;
   border-width: 5px 5px 0;
   border-top-color: #000;
 }
 .tooltip.top-left .tooltip-arrow {
   bottom: 0;
-  left: 5px;
+  right: 5px;
   margin-bottom: -5px;
   border-width: 5px 5px 0;
   border-top-color: #000;
 }
 .tooltip.top-right .tooltip-arrow {
   bottom: 0;
-  right: 5px;
+  left: 5px;
   margin-bottom: -5px;
   border-width: 5px 5px 0;
   border-top-color: #000;
 }
 .tooltip.right .tooltip-arrow {
   top: 50%;
-  right: 0;
+  left: 0;
   margin-top: -5px;
   border-width: 5px 5px 5px 0;
-  border-left-color: #000;
+  border-right-color: #000;
 }
 .tooltip.left .tooltip-arrow {
   top: 50%;
-  left: 0;
+  right: 0;
   margin-top: -5px;
   border-width: 5px 0 5px 5px;
-  border-right-color: #000;
+  border-left-color: #000;
 }
 .tooltip.bottom .tooltip-arrow {
   top: 0;
-  right: 50%;
-  margin-right: -5px;
+  left: 50%;
+  margin-left: -5px;
   border-width: 0 5px 5px;
   border-bottom-color: #000;
 }
 .tooltip.bottom-left .tooltip-arrow {
   top: 0;
-  left: 5px;
+  right: 5px;
   margin-top: -5px;
   border-width: 0 5px 5px;
   border-bottom-color: #000;
 }
 .tooltip.bottom-right .tooltip-arrow {
   top: 0;
-  right: 5px;
+  left: 5px;
   margin-top: -5px;
   border-width: 0 5px 5px;
   border-bottom-color: #000;
@@ -6763,7 +6763,7 @@ button.close {
 .popover {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 1060;
   display: none;
   max-width: 276px;
@@ -6795,13 +6795,13 @@ button.close {
   margin-top: -10px;
 }
 .popover.right {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .popover.bottom {
   margin-top: 10px;
 }
 .popover.left {
-  margin-right: -10px;
+  margin-left: -10px;
 }
 
 .popover-title {
@@ -6836,8 +6836,8 @@ button.close {
 }
 
 .popover.top > .arrow {
-  right: 50%;
-  margin-right: -11px;
+  left: 50%;
+  margin-left: -11px;
   border-bottom-width: 0;
   border-top-color: #999999;
   border-top-color: rgba(0, 0, 0, 0.25);
@@ -6852,22 +6852,22 @@ button.close {
 }
 .popover.right > .arrow {
   top: 50%;
-  right: -11px;
+  left: -11px;
   margin-top: -11px;
-  border-right-width: 0;
-  border-left-color: #999999;
-  border-left-color: rgba(0, 0, 0, 0.25);
+  border-left-width: 0;
+  border-right-color: #999999;
+  border-right-color: rgba(0, 0, 0, 0.25);
 }
 .popover.right > .arrow:after {
   content: " ";
-  right: 1px;
+  left: 1px;
   bottom: -10px;
-  border-right-width: 0;
-  border-left-color: #fff;
+  border-left-width: 0;
+  border-right-color: #fff;
 }
 .popover.bottom > .arrow {
-  right: 50%;
-  margin-right: -11px;
+  left: 50%;
+  margin-left: -11px;
   border-top-width: 0;
   border-bottom-color: #999999;
   border-bottom-color: rgba(0, 0, 0, 0.25);
@@ -6882,17 +6882,17 @@ button.close {
 }
 .popover.left > .arrow {
   top: 50%;
-  left: -11px;
+  right: -11px;
   margin-top: -11px;
-  border-left-width: 0;
-  border-right-color: #999999;
-  border-right-color: rgba(0, 0, 0, 0.25);
+  border-right-width: 0;
+  border-left-color: #999999;
+  border-left-color: rgba(0, 0, 0, 0.25);
 }
 .popover.left > .arrow:after {
   content: " ";
-  left: 1px;
-  border-left-width: 0;
-  border-right-color: #fff;
+  right: 1px;
+  border-right-width: 0;
+  border-left-color: #fff;
   bottom: -10px;
 }
 
@@ -6930,17 +6930,17 @@ button.close {
   .carousel-inner > .item.next, .carousel-inner > .item.active.right {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
-    right: 0;
+    left: 0;
   }
   .carousel-inner > .item.prev, .carousel-inner > .item.active.left {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
-    right: 0;
+    left: 0;
   }
   .carousel-inner > .item.next.left, .carousel-inner > .item.prev.right, .carousel-inner > .item.active {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    right: 0;
+    left: 0;
   }
 }
 .carousel-inner > .active,
@@ -6949,7 +6949,7 @@ button.close {
   display: block;
 }
 .carousel-inner > .active {
-  right: 0;
+  left: 0;
 }
 .carousel-inner > .next,
 .carousel-inner > .prev {
@@ -6958,26 +6958,26 @@ button.close {
   width: 100%;
 }
 .carousel-inner > .next {
-  right: 100%;
+  left: 100%;
 }
 .carousel-inner > .prev {
-  right: -100%;
+  left: -100%;
 }
 .carousel-inner > .next.left,
 .carousel-inner > .prev.right {
-  right: 0;
+  left: 0;
 }
 .carousel-inner > .active.left {
-  right: -100%;
+  left: -100%;
 }
 .carousel-inner > .active.right {
-  right: 100%;
+  left: 100%;
 }
 
 .carousel-control {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   bottom: 0;
   width: 15%;
   opacity: 0.5;
@@ -6995,8 +6995,8 @@ button.close {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 }
 .carousel-control.right {
-  right: auto;
-  left: 0;
+  left: auto;
+  right: 0;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
@@ -7021,13 +7021,13 @@ button.close {
 }
 .carousel-control .icon-prev,
 .carousel-control .glyphicon-chevron-left {
-  right: 50%;
-  margin-right: -10px;
+  left: 50%;
+  margin-left: -10px;
 }
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-right {
-  left: 50%;
-  margin-left: -10px;
+  right: 50%;
+  margin-right: -10px;
 }
 .carousel-control .icon-prev,
 .carousel-control .icon-next {
@@ -7046,11 +7046,11 @@ button.close {
 .carousel-indicators {
   position: absolute;
   bottom: 10px;
-  right: 50%;
+  left: 50%;
   z-index: 15;
   width: 60%;
-  margin-right: -30%;
-  padding-right: 0;
+  margin-left: -30%;
+  padding-left: 0;
   list-style: none;
   text-align: center;
 }
@@ -7101,11 +7101,11 @@ button.close {
   }
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .icon-prev {
-    margin-right: -10px;
+    margin-left: -10px;
   }
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-next {
-    margin-left: -10px;
+    margin-right: -10px;
   }
 
   .carousel-caption {
