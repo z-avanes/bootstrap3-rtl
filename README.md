@@ -1,4 +1,4 @@
-# [Bootstrap RTL](https://github.com/z-avanes/bootstrap-rtl)
+# [Bootstrap 3 RTL](https://github.com/z-avanes/bootstrap3-rtl)
 
 Bootstrap 3 for rtl language like persian, arabic ...
 
@@ -10,12 +10,22 @@ Bootstrap 3 for rtl language like persian, arabic ...
 ## Usage
 
 clone or download repository
-
 ```sh
 git clone https://github.com/z-avanes/bootstrap-rtl
 ```
+or install with bower
+```sh
+bower install bootstrap3-rtl
+```
+or install with npm
+```sh
+npm install bootstrap3-rtl
+```
 
-go to bootstrap-rtl directory
+go to bootstrap3-rtl directory
+```sh
+cd bootstrap3-rtl
+```
 
 install npm packages
 
