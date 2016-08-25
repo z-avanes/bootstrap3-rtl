@@ -4,7 +4,7 @@
   "authors": [
     "Zareh Avanesian <z.avanes@gmail.com> (http://www.avadesigner.com)"
   ],
-  "description": "bootstrap sass rtl",
+  "description": "bootstrap 3 sass rtl",
   "moduleType": [
     "node"
   ],
