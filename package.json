@@ -1,6 +1,6 @@
 {
   "name": "bootstrap3-rtl",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "bootstrap 3 sass rtl",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "gulp-clean-css": "^2.0.12",
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^1.0.5",
+    "gulp-sass": "^2.3.2",
     "gulp-uglify": "^1.2.0"
   }
 }

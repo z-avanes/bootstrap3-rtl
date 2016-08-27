@@ -1,13 +1,13 @@
 var gulp = require('gulp'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
     rename = require('gulp-rename'),
     notify = require('gulp-notify');
 
-
 gulp.task('build', function () {
-    return sass('bootstrap.scss', {style: 'expanded'})
+    return gulp.src('bootstrap.scss')
+        .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer('last 2 version'))
         .pipe(rename({suffix: '-rtl'}))
         .pipe(gulp.dest('dist'))
